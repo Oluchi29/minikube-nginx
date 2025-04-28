@@ -12,6 +12,15 @@ kubectl get svc -n dev
 minikube ip
 # Visit http://<minikube-ip>:30080
 
+# To delete all pods inside a namespace
+
+kubectl delete pods --all -n dev
+
+# . Delete the Namespace
+
+kubectl delete namespace dev
+
+
 
 ## Errors Encountered
 minikube start was not working 
